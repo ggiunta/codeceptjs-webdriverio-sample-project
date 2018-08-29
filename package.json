@@ -1,0 +1,8 @@
+{
+    "name": "codeceptjs-webdriverio-sample-project",
+    "version": "1.0.0",
+    "dependencies": {
+        "codeceptjs": "1.3.3",
+        "webdriverio": "4.13.2"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "output": "./output",
+    "helpers": {
+        "WebDriverIO": {
+            "url": "https://github.com",
+            "browser": "chrome",
+            "desiredCapabilities": {
+                "chromeOptions": {
+                    "args": [ "--start-maximized" ]
+                }
+            }
+        }
+    },
+    "include": {
+        "I": "./steps_file.js",
+        "loginPage": "./pages/login.js",
+        "dashboardPage": "./pages/dashboard.js",
+        "homePage": "./pages/home.js"
+    },
+    "mocha": {},
+    "bootstrap": false,
+    "teardown": null,
+    "hooks": [],
+    "gherkin": {},
+    "tests": "./tests/*_test.js",
+    "timeout": 10000,
+    "name": "codeceptjs-webdriverio-sample-project"
+}
