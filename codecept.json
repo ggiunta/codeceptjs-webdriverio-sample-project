@@ -1,29 +1,32 @@
 {
-    "output": "./output",
-    "helpers": {
-        "WebDriverIO": {
-            "url": "https://github.com",
-            "browser": "chrome",
-            "desiredCapabilities": {
-                "chromeOptions": {
-                    "args": [ "--start-maximized" ]
-                }
-            }
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "https://github.com",
+      "browser": "chrome",
+      "desiredCapabilities": {
+        "chromeOptions": {
+          "args": [
+            "--start-maximized"
+          ]
         }
-    },
-    "include": {
-        "I": "./steps_file.js",
-        "config": "./config.json",
-        "loginPage": "./pages/login.js",
-        "dashboardPage": "./pages/dashboard.js",
-        "homePage": "./pages/home.js"
-    },
-    "mocha": {},
-    "bootstrap": false,
-    "teardown": null,
-    "hooks": [],
-    "gherkin": {},
-    "tests": "./tests/*_test.js",
-    "timeout": 10000,
-    "name": "codeceptjs-webdriverio-sample-project"
+      }
+    }
+  },
+  "include": {
+    "I": "./steps_file.js",
+    "config": "./config.json",
+    "loginPage": "./pages/login.js",
+    "dashboardPage": "./pages/dashboard.js",
+    "homePage": "./pages/home.js",
+    "profilePage": "./pages/profile.js"
+  },
+  "mocha": {},
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {},
+  "tests": "./tests/*_test.js",
+  "timeout": 10000,
+  "name": "codeceptjs-webdriverio-sample-project"
 }
