@@ -13,6 +13,7 @@
     },
     "include": {
         "I": "./steps_file.js",
+        "config": "./config.json",
         "loginPage": "./pages/login.js",
         "dashboardPage": "./pages/dashboard.js",
         "homePage": "./pages/home.js"
