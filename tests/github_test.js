@@ -17,7 +17,7 @@ Scenario('Logout', (I, config, loginPage, dashboardPage, homePage) => {
     I.waitForElement(homePage.labels.signUpForGithub)
 });
 
-Scenario('Update profile bio', (I, config, loginPage, dashboardPage, profilePage) => {
+Scenario('Update profile bio', (I, config, helpers, loginPage, dashboardPage, profilePage) => {
     I.amOnPage(loginPage.path)
     I.waitForElement(loginPage.labels.signIn)
     loginPage.submitCredentials(config.validUser.user, config.validUser.password)
@@ -26,7 +26,7 @@ Scenario('Update profile bio', (I, config, loginPage, dashboardPage, profilePage
     I.click(dashboardPage.avatarMenu.yourProfile)
     I.waitForElement(profilePage.buttons.editBio)
     I.click(profilePage.buttons.editBio)
-    var randomBio = Math.random().toString(36).substring(7)
+    var randomBio = helpers.generateRandomString()
     I.fillField(profilePage.fields.bio, randomBio)
     I.click(profilePage.buttons.saveBio)
     I.waitForElement(profilePage.buttons.editBio)

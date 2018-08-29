@@ -14,8 +14,9 @@
     }
   },
   "include": {
-    "I": "./steps_file.js",
+    "I": "./support/steps_file.js",
     "config": "./config.json",
+    "helpers": "./support/helpers.js",
     "loginPage": "./pages/login.js",
     "dashboardPage": "./pages/dashboard.js",
     "homePage": "./pages/home.js",
