@@ -19,7 +19,9 @@
     "loginPage": "./pages/login.js",
     "dashboardPage": "./pages/dashboard.js",
     "homePage": "./pages/home.js",
-    "profilePage": "./pages/profile.js"
+    "profilePage": "./pages/profile.js",
+    "issuesPage": "./pages/issues.js",
+    "marketplacePage": "./pages/marketplace.js"
   },
   "mocha": {},
   "bootstrap": false,

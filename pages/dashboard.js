@@ -6,5 +6,7 @@ module.exports = {
         signOut: '//form[@class="logout-form"]',
         yourProfile: '//a[text()="Your profile"]'
     },
-    exploreGithubLabel: '//a[text()="Explore GitHub"]'
+    labels: {
+        exploreGithub: '//a[text()="Explore GitHub"]'
+    }
 }
