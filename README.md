@@ -13,10 +13,13 @@ cd dir/where/code/was/cloned/to
 npm install
 ```
 *Run tests*
+
+Set your Github credentials in `config.json` located in the root dir
+
 ```
 cd dir/where/code/was/cloned/to
 ./node_modules/.bin/codeceptjs run
 ```
 *Run headless*
 
-Edit codecept.json in the root dir and set [these Chrome options](https://codecept.io/helpers/WebDriverIO/#headless-chrome)
+Edit `codecept.json` in the root dir and set [these Chrome options](https://codecept.io/helpers/WebDriverIO/#headless-chrome)
