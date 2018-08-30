@@ -50,7 +50,7 @@ Scenario('Marketplace section', (I, config, loginPage, dashboardPage, marketplac
     I.waitForElement(marketplacePage.labels.main)
 });
 
-Scenario('Dummy failing test', (I, config, loginPage) => {
+Scenario('Dummy failing test', (I, loginPage) => {
     I.amOnPage(loginPage.path)
     I.waitForElement('Non-existing element')
 });
